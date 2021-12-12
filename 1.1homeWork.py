@@ -1,13 +1,10 @@
 def func1():
-    spisok = []
-    n = 1
-    while n:
+    list = []
+    n = input("Введите что-нибудь: ")
+    while n != ' ' and n != '':
+        list.append(n)
         n = input("Введите что-нибудь: ")
-        if n == '' or n == ' ':
-            break
-        spisok.append(n)
-
-    return spisok
+    return list
 
 
 print(func1())
