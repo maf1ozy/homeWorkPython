@@ -1,5 +1,5 @@
 def season(n):
-    seas = int(n)//3
+    seas = int(n) // 3
     index = ""
     if seas == 2:
         index = "Лето"
