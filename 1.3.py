@@ -1,10 +1,10 @@
-def fibb(n):
+def fib(n):
     list = []
     i = int(n)
     temp = 0
     last = 0
     new = 1
-    while i != 0:
+    while i:
         i -= 1
         temp = new
         list.append(last)
@@ -16,4 +16,4 @@ def fibb(n):
 
 
 a = input("Put the number of members Fibonacci's numbers: ")
-print(fibb(a))
+print(fib(a))
