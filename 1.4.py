@@ -1,18 +1,8 @@
+import first
 
 
-def vvod():
-    list=[]
-    n=1
-    while n:
-        n=input("type something: ")
-        if n:
-            list.append(n)
-    return list
-
-
-
-list=vvod()
-print("element  | chastota")
+list=func1()
+print("element  |  chastota")
 count=0
 counted=[]
 for elem in list:
