@@ -9,14 +9,14 @@ class Date:
         self.day = d
 
     def selfinput(self):
-        self.day = input("Введите день: ")
-        self.month = input("Введите месяц: ")
-        self.year = input("Введите год: ")
+        self.day = int(input("Input day: "))
+        self.month = int(input("Input month: "))
+        self.year = int(input("Input year: "))
 
     def displaydate(self):
-        print("Год: ", self.year)
-        print("Месяц: ", self.month)
-        print("День: ", self.day)
+        print("Day: ", self.day)
+        print("Month: ", self.month)
+        print("Year: ", self.year)
 
 
 date1 = Date(2021, 11, 24)
