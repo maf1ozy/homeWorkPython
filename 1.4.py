@@ -1,5 +1,4 @@
-import first
-
+from first import func1
 
 list = func1()
 print("element  |  chastota")
@@ -16,5 +15,5 @@ for elem in list:
         if elem == elem1:
             count += 1
             counted.append(elem)
-    print ("   ", elem, "   |  ", count)
+    print ("   ", elem, "  |  ", count)
     count = 0
