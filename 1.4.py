@@ -2,7 +2,6 @@ from first import func1
 
 list = func1()
 print("element  |  chastota")
-count = 0
 counted = []
 for elem in list:
     marker = 1;
@@ -13,7 +12,5 @@ for elem in list:
         continue
     for elem1 in list:
         if elem == elem1:
-            count += 1
             counted.append(elem)
-    print ("   ", elem, "  |  ", count)
-    count = 0
+    print ("   ", elem, "  |  ", list.count(elem))
