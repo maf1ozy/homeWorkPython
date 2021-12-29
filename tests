@@ -1,0 +1,41 @@
+# -*- coding: cp1251 -*-
+
+from dz12 import season
+from dz13 import fib
+from dz15 import avrg
+from dz16 import whatNumber
+
+assert season(1) == "Зима"
+assert season(2) == "Зима"
+assert season(3) == "Весна"
+assert season(4) == "Весна"
+assert season(5) == "Весна"
+assert season(6) == "Лето"
+assert season(8) == "Лето"
+assert season(9) == "Осень"
+assert season(11) == "Осень"
+assert season(12) == "Зима"
+
+assert fib(0) == []
+assert fib(1) == [0]
+assert fib(2) == [0, 1]
+assert fib(3) == [0, 1, 1]
+assert fib(8) == [0, 1, 1, 2, 3, 5, 8, 13]
+assert fib(15) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
+
+assert avrg([1,6]) == 3.5
+assert avrg([2,4]) == 3
+assert avrg([3, 7, 12]) == 7.333333333333333
+assert avrg([1, 2, 3]) == 2
+assert avrg([1, 2, 3, 4]) == 2.5
+assert avrg([5, 7, 2, 4]) == 4.5
+assert avrg([3, 4, 5, 6, 7]) == 5
+
+assert whatNumber(0) == False
+assert whatNumber(1) == False
+assert whatNumber(2) == True
+assert whatNumber(4) == False
+assert whatNumber(17) == True
+assert whatNumber(19) == True
+assert whatNumber(21) == False
+assert whatNumber(53) == True
